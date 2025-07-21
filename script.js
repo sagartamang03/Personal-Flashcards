@@ -2,68 +2,130 @@
 const data = {
 growthMindset: [
   {
-    front: "You totally bombed a presentation. What’s the growth mindset way to react?",
-    back: "Instead of spiraling, take a breath, ask what you can learn from it, get feedback, and try again better next time."
+    front: "You gave a bad presentation. What should you do?",
+    back: "Don't give up. Think about what went wrong. Try again next time, but better."
   },
   {
-    front: "Your friend says, “I’m just bad at math.” How would you gently reframe that?",
-    back: "Try: “Maybe you just haven’t found the way that works best for *you* yet. Want help figuring it out?”"
+    front: "Your friend says, “I’m just bad at math.” What can you say?",
+    back: "“Maybe you just need more time or a new way to learn it.”"
   },
   {
-    front: "What’s a small daily habit that builds a growth mindset?",
-    back: "Celebrate effort, not just results. Like telling yourself, 'Nice! I stuck with it even when it got tricky.'"
+    front: "You made a mistake in front of people. What now?",
+    back: "It’s okay. Everyone messes up. Learn from it and keep going."
   },
   {
-    front: "You're jealous of someone who's way ahead of you. Growth mindset response?",
-    back: "Flip it: 'What can I learn from them?' Their success doesn't block yours — it can fuel it."
+    front: "You feel jealous of someone better than you. What’s a better way to see it?",
+    back: "Think: ‘I can learn from them.’ Their success shows what’s possible."
   },
   {
-    front: "What’s something you're 'not good at...yet'?",
-    back: "Pick one thing. Say it out loud with a 'yet' — then break it into steps you *can* do today."
+    front: "You’re not good at something. What can you say to yourself?",
+    back: "‘I’m not good at this yet. But I can get better if I keep trying.’"
+  },
+   {
+    front: "You feel like quitting something hard. What can you tell yourself?",
+    back: "‘It’s hard now, but if I keep going, I’ll get better.’"
+  },
+  {
+    front: "Your friend learns something faster than you. What do you do?",
+    back: "Everyone learns at a different speed. Keep going your way."
+  },
+  {
+    front: "You keep making the same mistake. What can help?",
+    back: "Ask for help. Try a new way. Keep trying."
+  },
+  {
+    front: "You didn’t reach your goal. What now?",
+    back: "Look at what worked and what didn’t. Try again with a new plan."
+  },
+  {
+    front: "You feel embarrassed after messing up. What would a growth mindset say?",
+    back: "‘Mistakes help me learn. Everyone makes them.’"
   }
-],
+]
+,
 designThinking: [
   {
-    front: "You want to help a friend who's stressed. What’s the ‘Empathize’ move?",
-    back: "Put yourself in their shoes — ask how they’re really doing, listen fully, no fixing yet."
+    front: "Your friend is sad. What do you do first?",
+    back: "Listen. Don’t try to fix it right away. Just understand how they feel."
   },
   {
-    front: "Your team keeps solving the wrong problem. What stage might you be skipping?",
-    back: "‘Define’ — you need to slow down and get clear on what *actually* needs solving."
+    front: "You keep fixing the wrong thing. What should you ask?",
+    back: "‘What is the real problem?’ Start there."
   },
   {
-    front: "You’re stuck in your head with the same old ideas. What’s the move?",
-    back: "Ideate like you’re 7 years old — silly, weird, whatever. Quantity first. You can sort later."
+    front: "You have no ideas. What can you try?",
+    back: "Write down every idea, even silly ones. One of them might help."
   },
   {
-    front: "You have a cool idea but don’t know if it’ll work. What’s a quick test?",
-    back: "Make a scrappy version — a sketch, a demo, a roleplay — just enough to get feedback fast."
+    front: "You have an idea but don’t know if it works. What can you do?",
+    back: "Make a small version. Test it with someone. See what they say."
   },
   {
-    front: "Your solution didn’t work. Should you panic?",
-    back: "Nope. Testing isn’t failure — it’s learning. Use what didn’t work to shape what might."
+    front: "Your idea didn’t work. What now?",
+    back: "Don’t quit. Learn what didn’t work. Try again in a new way."
+  },
+    {
+    front: "Your friend keeps forgetting their keys. What’s a good first step?",
+    back: "Watch what they do each day. Try to understand the real problem."
+  },
+  {
+    front: "Your idea doesn’t work for others. What can you do?",
+    back: "Ask them what they need. Make changes based on that."
+  },
+  {
+    front: "You want to help people eat healthier. What’s a good way to start?",
+    back: "Talk to them. Ask about their habits and struggles first."
+  },
+  {
+    front: "Your team has too many ideas. What can help?",
+    back: "Pick a few to test. Don’t try everything at once."
+  },
+  {
+    front: "You made a small version of your idea. What now?",
+    back: "Show it to people. See what works and what doesn’t."
   }
-],
+]
+,
 stoicism: [
   {
-    front: "You spill coffee on yourself right before a meeting. Stoic move?",
-    back: "Shrug, change your shirt if you can, laugh if not. It's outside your control. Keep going."
+    front: "You spill coffee on yourself. What should you do?",
+    back: "Clean it up. Don’t get mad. These things happen."
   },
   {
-    front: "You’re obsessing over what someone *might* be thinking about you. What would a Stoic say?",
-    back: "You can’t control their thoughts. Focus on your own actions and intentions. Let the rest go."
+    front: "You worry what others think of you. What can help?",
+    back: "You can’t control their thoughts. Just do your best."
   },
   {
-    front: "Life threw a curveball you didn’t ask for. How do you practice 'Amor Fati' here?",
-    back: "Say: 'Okay, this is happening. How do I turn this into something useful or meaningful?'"
+    front: "Something bad happened. What now?",
+    back: "You can’t change it. But you can choose how to act next."
   },
   {
-    front: "You’re stuck in traffic, fuming. How do you zoom out, Stoic-style?",
-    back: "Imagine looking down at Earth from space — tiny you in a tiny car. Does this moment still matter?"
+    front: "You’re angry in traffic. What can help you calm down?",
+    back: "Breathe. Remember, this moment is small in your whole life."
   },
   {
-    front: "You want to waste less time. What’s a Stoic way to remind yourself?",
-    back: "Whisper 'Memento Mori' — not as doom, but as a nudge: life is short. What matters right now?"
+    front: "You’re wasting time online. What can you ask yourself?",
+    back: "‘Is this how I want to spend my time?’"
+  },
+  {
+    front: "You had a bad day. What can help you deal with it?",
+    back: "It’s just one day. Tomorrow is a new start. Let it pass."
+  },
+  {
+    front: "Someone is rude to you. What can you control?",
+    back: "You can’t control them. But you can choose to stay calm."
+  },
+  {
+    front: "You're nervous before something big. What would help?",
+    back: "Focus on what *you* can do. Let go of the rest."
+  },
+  {
+    front: "You’re stuck in a boring task. What’s a better way to see it?",
+    back: "Try to do it well anyway. It builds patience and strength."
+  },
+  {
+    front: "You're upset about something from the past. What’s a Stoic way to think?",
+    back: "You can’t change the past. But you can choose how to move forward now."
   }
 ]
 };
