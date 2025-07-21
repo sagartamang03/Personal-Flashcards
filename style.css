@@ -1,0 +1,163 @@
+/* General Body and Font Styling */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Main Title */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+/* Topic Button Container */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* General Button Styling (Topics and Back) */
+.topic-btn, .back-button {
+    margin: 5px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topic-btn:hover,
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific Topic Button Colors */
+.topic-btn.growth-mindset { background: #27ae60; }
+.topic-btn.growth-mindset:hover { background: #229954; }
+
+.topic-btn.design-thinking { background: #2980b9; }
+.topic-btn.design-thinking:hover { background: #2471a3; }
+
+.topic-btn.stoicism { background: #8e44ad; }
+.topic-btn.stoicism:hover { background: #7d3c98; }
+
+/* Back Button Styling */
+.back-button {
+    background: #6c757d;
+    margin-bottom: 20px;
+    display: inline-block; /* Ensures it's not full-width */
+}
+
+.back-button:hover {
+    background: #5a6268;
+}
+
+/* Flashcard Grid Container */
+.flashcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    perspective: 1200px; /* Adds depth for 3D effect */
+}
+
+/* Individual Card Styling */
+.card {
+    background: transparent;
+    height: 200px; /* Increased height for more content */
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Inner container for the 3D flip effect */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* The 'flipped' class is added by JS to trigger the rotation */
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back of the card */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* For Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #eee;
+}
+
+/* Card Front Content */
+.card-front strong {
+    font-size: 1.3em;
+    color: #34495e;
+    font-weight: 500;
+}
+
+/* Card Back Content */
+.card-back {
+    transform: rotateY(180deg);
+    background: #f8f9fa;
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .flashcards {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    .topic-btn, .back-button {
+        width: 100%;
+        padding: 18px;
+    }
+}
