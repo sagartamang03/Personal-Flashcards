@@ -1,77 +1,73 @@
 // Data for all flashcard topics
 const data = {
-    growthMindset: [
-        {
-            front: "What is a growth mindset?",
-            back: "The belief that abilities and intelligence can be developed through dedication, effort, and learning."
-        },
-        {
-            front: "Growth mindset vs. fixed mindset (how do they view failure?)",
-            back: "Growth: Failure is an opportunity to learn and grow. Fixed: Failure is a sign that you're not capable."
-        },
-        {
-            front: "How would a growth mindset respond to failing a test?",
-            back: "By reflecting on what went wrong, adjusting study strategies, seeking help, and trying again with a new approach."
-        },
-        {
-            front: "Reframe Prompt: “I’m just not good at this.”",
-            back: "Growth Mindset version: “I’m not good at this yet, but I can improve with practice and effort.”"
-        },
-        {
-            front: "What does neuroscience say about learning and effort?",
-            back: "The brain is malleable. When you learn and practice, your brain forms new neural connections—a process called neuroplasticity."
-        }
-    ],
-    designThinking: [
-        {
-            front: "What is the first stage of Design Thinking?",
-            back: "Empathize: Understand the human needs involved by observing, engaging, and immersing yourself in their experiences."
-        },
-        {
-            front: "What is the 'Define' stage?",
-            back: "Define: Analyze your observations from the empathize stage to define the core problems you and your team have identified."
-        },
-        {
-            front: "What happens during the 'Ideate' stage?",
-            back: "Ideate: Brainstorm a wide range of creative solutions. It's about quantity over quality at this stage."
-        },
-        {
-            front: "What is a 'Prototype'?",
-            back: "An inexpensive, scaled-down version of the product or feature, used to test and explore solutions before investing heavily."
-        },
-        {
-            front: "What is the final stage, 'Test'?",
-            back: "Test: Share your prototype with users to get feedback. This feedback is then used to refine the solution or redefine the problem."
-        }
-    ],
-    stoicism: [
-        {
-            front: "What is the 'Dichotomy of Control'?",
-            back: "The idea that some things are within our control (our thoughts, judgments, actions) and some are not (external events, other people)."
-        },
-        {
-            front: "What does 'Memento Mori' mean?",
-            back: "“Remember that you must die.” A Stoic practice of reflecting on mortality to create perspective and urgency."
-        },
-        {
-            front: "What is 'Amor Fati'?",
-            back: "“A love of fate.” The practice of embracing and making the best of everything that happens, both good and bad."
-        },
-        {
-            front: "What is the 'View from Above'?",
-            back: "A meditation exercise where you visualize events from a cosmic, detached perspective to see how small your problems are."
-        },
-        {
-            front: "Who was Marcus Aurelius?",
-            back: "A Roman Emperor and Stoic philosopher, famous for his private writings now known as 'Meditations'."
-        }
-    ]
+growthMindset: [
+  {
+    front: "You totally bombed a presentation. What’s the growth mindset way to react?",
+    back: "Instead of spiraling, take a breath, ask what you can learn from it, get feedback, and try again better next time."
+  },
+  {
+    front: "Your friend says, “I’m just bad at math.” How would you gently reframe that?",
+    back: "Try: “Maybe you just haven’t found the way that works best for *you* yet. Want help figuring it out?”"
+  },
+  {
+    front: "What’s a small daily habit that builds a growth mindset?",
+    back: "Celebrate effort, not just results. Like telling yourself, 'Nice! I stuck with it even when it got tricky.'"
+  },
+  {
+    front: "You're jealous of someone who's way ahead of you. Growth mindset response?",
+    back: "Flip it: 'What can I learn from them?' Their success doesn't block yours — it can fuel it."
+  },
+  {
+    front: "What’s something you're 'not good at...yet'?",
+    back: "Pick one thing. Say it out loud with a 'yet' — then break it into steps you *can* do today."
+  }
+],
+designThinking: [
+  {
+    front: "You want to help a friend who's stressed. What’s the ‘Empathize’ move?",
+    back: "Put yourself in their shoes — ask how they’re really doing, listen fully, no fixing yet."
+  },
+  {
+    front: "Your team keeps solving the wrong problem. What stage might you be skipping?",
+    back: "‘Define’ — you need to slow down and get clear on what *actually* needs solving."
+  },
+  {
+    front: "You’re stuck in your head with the same old ideas. What’s the move?",
+    back: "Ideate like you’re 7 years old — silly, weird, whatever. Quantity first. You can sort later."
+  },
+  {
+    front: "You have a cool idea but don’t know if it’ll work. What’s a quick test?",
+    back: "Make a scrappy version — a sketch, a demo, a roleplay — just enough to get feedback fast."
+  },
+  {
+    front: "Your solution didn’t work. Should you panic?",
+    back: "Nope. Testing isn’t failure — it’s learning. Use what didn’t work to shape what might."
+  }
+],
+stoicism: [
+  {
+    front: "You spill coffee on yourself right before a meeting. Stoic move?",
+    back: "Shrug, change your shirt if you can, laugh if not. It's outside your control. Keep going."
+  },
+  {
+    front: "You’re obsessing over what someone *might* be thinking about you. What would a Stoic say?",
+    back: "You can’t control their thoughts. Focus on your own actions and intentions. Let the rest go."
+  },
+  {
+    front: "Life threw a curveball you didn’t ask for. How do you practice 'Amor Fati' here?",
+    back: "Say: 'Okay, this is happening. How do I turn this into something useful or meaningful?'"
+  },
+  {
+    front: "You’re stuck in traffic, fuming. How do you zoom out, Stoic-style?",
+    back: "Imagine looking down at Earth from space — tiny you in a tiny car. Does this moment still matter?"
+  },
+  {
+    front: "You want to waste less time. What’s a Stoic way to remind yourself?",
+    back: "Whisper 'Memento Mori' — not as doom, but as a nudge: life is short. What matters right now?"
+  }
+]
 };
 
-/**
- * Displays the flashcards for a selected topic.
- * @param {string} topic - The key for the selected topic in the data object.
- */
 function showTopic(topic) {
     const flashcardContainer = document.getElementById("flashcards");
     const topicSelection = document.getElementById("topic-selection");
